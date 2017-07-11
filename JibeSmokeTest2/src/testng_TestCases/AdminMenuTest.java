@@ -251,9 +251,7 @@ public class AdminMenuTest extends WebDriverPass
 	 public void Currency() throws Exception
 	  {
 		 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); 
-		 
-		 Thread.sleep(100);
-		 
+		
 		 test=report.startTest("Currency");
 
 		  Adl.Currency(driver);

@@ -60,7 +60,7 @@ private static ExtentReports report;
 	    String ExpectedTitle=data.getData(12,7,3).trim(); // It will taking the Expected Title name from the excel sheet.
 			
 	    String ActualTitle=driver.getTitle().trim();  // taking the actual title name by the web site.
-
+	    //String tit= ActualTitle;
 		SShot(ExpectedTitle, ActualTitle, driver); // if Title is not matching they it will take screen shot and store in folder
 	    
 	    Assert.assertEquals(ExpectedTitle, ActualTitle);
@@ -88,6 +88,8 @@ private static ExtentReports report;
 		Thread.sleep(100);
 
 		write_data.writedata(12, 7, 4, Result);
+		
+		//write_data.writedata(12, 7, 5, tit);
 				 
 		return null;
 				

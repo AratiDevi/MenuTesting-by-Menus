@@ -92,7 +92,7 @@ private static ExtentReports report;
 		System.out.println(driver.getTitle().trim() +  " Pageloading time is " + TotalTime + " Milisec");
 
 		write_data.writedata(3, 4, 4, Result);
-
+		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		Thread.sleep(100);
@@ -890,6 +890,8 @@ private static ExtentReports report;
 		driver.findElement(By.linkText(data.getData(3, 16, 2))).click();// Click Currency
 		
 		Thread.sleep(100);
+		
+		
 	
 	//  --------------------- Page LoadingTime------------------------------------------------------------------------------
 

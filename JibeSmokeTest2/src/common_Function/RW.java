@@ -5,7 +5,7 @@ import common_Function.WriteExcel;
 
 public class RW {
 	
-	public static String path="C:\\Users\\Arati\\workspace\\JibeSmokeTest\\"; //Workspace excel path
+	public static String path="C:\\Users\\Arati\\workspace\\JibeSmokeTest2\\"; //Workspace excel path
 		
     public ExcelRead data = new ExcelRead(path.concat("Excel\\ReadWrite.xlsx")); // Read excel path
 
